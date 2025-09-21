@@ -1,0 +1,22 @@
+{
+	"app.title": "Daissi's Blog",
+	"app.greeting": "Welcome to My App!",
+	"app.me.description": "I'm Daissi, i'm a software developer",
+	"app.navbar.home": "Home",
+	"app.navbar.articles": "Articles",
+	"app.navbar.me": "About me",
+	"app.navbar.contact": "Contact",
+	"app.who.header": "How i am?",
+	"app.articles.description": "I like different tech experiments, try read some of them",
+	"categories.selector.title": "Categories",
+	"categories.title.ia": "Artificial Intelligence",
+	"categories.title.web": "Web Development",
+	"categories.title.iot": "IoT",
+	"categories.title.experiments": "Experiments",
+	"categories.title.research": "Research",
+	"aboutme.panel.title": "About me",
+	"aboutme.panel.profession": "Software Developer",
+	"aboutme.panel.description": "Software developer with 7 years of experience; developing in different python web frameworks such as Flask, Django and FastAPI, the same way with programming languages like Javascript, in backend with tools like NodeJS and in frontend with frameworks like VueJS and ReactJS; taking into account the implementation of different architecture patterns linked to different agile methodologies, clean arechitectures, design patterns, and clean code practices. Additionally I have been working in the integration tools using AI and LLMs, so as another projects; so here you will found more about them.",
+	"tags.panel.title": "Tags",
+	"articles.panel.title": "Articles"
+}
