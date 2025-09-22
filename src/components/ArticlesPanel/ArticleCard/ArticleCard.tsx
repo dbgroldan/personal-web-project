@@ -23,7 +23,9 @@ const ArticleCard = ({ article }: ArticleType) => {
 					) : (
 						<span>No tags available</span>
 					)}
-					<button className="btn btn-primary">{t("articles.list.card.read")}</button>
+					<button className="btn btn-primary">
+						{t("articles.list.card.read")}
+					</button>
 				</div>
 			</div>
 		</div>

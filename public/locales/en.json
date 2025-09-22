@@ -1,18 +1,18 @@
 {
-	"navbar":{
+	"navbar": {
 		"title": "DbgRoldan's Blog",
 		"home": "Home",
 		"articles": "Articles",
 		"me": "About me",
 		"contact": "Contact"
 	},
-	"carrousel":{
+	"carrousel": {
 		"greeting": "Welcome to My App!",
 		"description": "I like different tech experiments, try read some of them",
 		"header": "How i am?",
 		"myDescription": "I'm Daissi, i'm a software developer"
 	},
-	"categoriesPanel":{
+	"categoriesPanel": {
 		"header": "Categories",
 		"titles": {
 			"ia": "Artificial Intelligence",
@@ -22,7 +22,7 @@
 			"research": "Research"
 		}
 	},
-	"aboutMePanel":{
+	"aboutMePanel": {
 		"title": "About me",
 		"profession": "Software Developer",
 		"description": "Software developer with 7 years of experience; developing in different python web frameworks such as Flask, Django and FastAPI, the same way with programming languages like Javascript, in backend with tools like NodeJS and in frontend with frameworks like VueJS and ReactJS; taking into account the implementation of different architecture patterns linked to different agile methodologies, clean arechitectures, design patterns, and clean code practices. Additionally I have been working in the integration tools using AI and LLMs, so as another projects; so here you will found more about them."
@@ -35,7 +35,13 @@
 			"title": "Articles",
 			"card": {
 				"imageNotFound": "Image not found",
-				"read": "Read"}
+				"read": "Read"
+			}
+		}
+	},
+	"footer": {
+		"socialNetworks": {
+			"title": "Social"
 		}
 	}
 }

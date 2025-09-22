@@ -1,18 +1,18 @@
 {
-	"navbar":{
+	"navbar": {
 		"title": "DbgRoldan Blog",
 		"home": "Inicio",
 		"articles": "Articulos",
 		"me": "Acerca de",
 		"contact": "Contacto"
 	},
-	"carrousel":{
+	"carrousel": {
 		"greeting": "Bienvenido a mi App!",
 		"description": "Me gusta hacer diferentes experimentos en torno a las tecnologias, por aqui podras encontrar algunos.",
 		"header": "Quien soy?",
 		"myDescription": "Soy Daissi, una software developer"
 	},
-	"categoriesPanel":{
+	"categoriesPanel": {
 		"header": "Categorias",
 		"titles": {
 			"ia": "Inteligencia Artificial",
@@ -22,7 +22,7 @@
 			"research": "Investigaciones"
 		}
 	},
-	"aboutMePanel":{
+	"aboutMePanel": {
 		"title": "Acerca de mi",
 		"profession": "Desarrolladora de Software",
 		"description": "Desarrollador de software con 7 años de experiencia; desarrollo en diferentes marcos web de Python, como Flask, Django y FastAPI, del mismo modo que con lenguajes de programación como Javascript, en backend con herramientas como NodeJS y en frontend con marcos como VueJS y ReactJS; teniendo en cuenta la implementación de diferentes patrones de arquitectura vinculados a diferentes metodologías ágiles, arquitecturas limpias, patrones de diseño y prácticas de código limpio. Además, he estado trabajando en herramientas de integración que utilizan IA y LLM, así como en otros proyectos; aquí encontrarás más información al respecto."
@@ -37,6 +37,11 @@
 				"imageNotFound": "Imagen no encontrada",
 				"read": "Leer"
 			}
+		}
+	},
+	"footer": {
+		"socialNetworks": {
+			"title": "Redes"
 		}
 	}
 }
