@@ -17,18 +17,18 @@ const NavigationBar = () => {
 							<img src="/images/avatar.png" />
 						</div>
 					</div>
-					<Title>{t("app.title")}</Title>
+					<Title>{t("navbar.title")}</Title>
 				</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
 					<li>
-						<a>{t("app.navbar.home")}</a>
+						<a>{t("navbar.home")}</a>
 					</li>
 					{articlesTags.length > 0 && (
 						<li>
 							<details>
-								<summary>{t("app.navbar.articles")}</summary>
+								<summary>{t("navbar.articles")}</summary>
 								<ul className="p-2">
 									<li>
 										<a>Submenu 1</a>
@@ -42,14 +42,14 @@ const NavigationBar = () => {
 					)}
 					{articlesTags.length == 0 && (
 						<li>
-							<a>{t(t("app.navbar.articles"))}</a>
+							<a>{t(t("navbar.articles"))}</a>
 						</li>
 					)}
 					<li>
-						<a>{t(t("app.navbar.me"))}</a>
+						<a>{t(t("navbar.me"))}</a>
 					</li>
 					<li>
-						<a>{t("app.navbar.contact")}</a>
+						<a>{t("navbar.contact")}</a>
 					</li>
 				</ul>
 			</div>

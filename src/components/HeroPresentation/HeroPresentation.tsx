@@ -18,10 +18,10 @@ const HeroPresentation = () => {
 						<div className="hero-content flex-col lg:flex-row-reverse">
 							<HeroImage className="max-w-sm rounded-lg shadow-2xl" />
 							<HeroContainer>
-								<h1 className="text-5xl font-bold">{t("app.greeting")}</h1>
-								<p className="py-6">{t("app.articles.description")}</p>
+								<h1 className="text-5xl font-bold">{t("carrousel.greeting")}</h1>
+								<p className="py-6">{t("carrousel.description")}</p>
 								<button className="btn btn-primary">
-									{t("app.navbar.articles")}
+									{t("navbar.articles")}
 								</button>
 							</HeroContainer>
 						</div>
@@ -40,14 +40,14 @@ const HeroPresentation = () => {
 						<div className="hero-content flex-col lg:flex-row">
 							<HeroImage className="max-w-sm rounded-lg shadow-2xl" />
 							<HeroContainer>
-								<h1 className="text-5xl font-bold">{t("app.who.header")}</h1>
-								<p className="py-6">{t("app.me.description")}</p>
+								<h1 className="text-5xl font-bold">{t("carrousel.header")}</h1>
+								<p className="py-6">{t("carrousel.myDescription")}</p>
 								<AboutMeButtons>
 									<button className="btn btn-primary">
-										{t("app.navbar.me")}
+										{t("navbar.me")}
 									</button>
 									<button className="btn btn-secondary">
-										{t("app.navbar.contact")}
+										{t("navbar.contact")}
 									</button>
 								</AboutMeButtons>
 							</HeroContainer>

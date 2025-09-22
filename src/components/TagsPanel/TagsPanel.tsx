@@ -12,23 +12,23 @@ const TagsPanel = () => {
 
 	const supportedTags: Array<Tag> = [
 		{
-			name: t("categories.title.ia"),
+			name: t("categoriesPanel.titles.ia"),
 			type: "badge-info",
 		},
 		{
-			name: t("categories.title.web"),
+			name: t("categoriesPanel.titles.web"),
 			type: "badge-neutral",
 		},
 		{
-			name: t("categories.title.iot"),
+			name: t("categoriesPanel.titles.iot"),
 			type: "badge-info",
 		},
 		{
-			name: t("categories.title.experiments"),
+			name: t("categoriesPanel.titles.experiments"),
 			type: "badge-neutral",
 		},
 		{
-			name: t("categories.title.research"),
+			name: t("categoriesPanel.titles.research"),
 			type: "badge-info",
 		},
 	];
@@ -36,10 +36,12 @@ const TagsPanel = () => {
 	return (
 		<Card className="card w-full bg-base-100 card-md shadow-sm ">
 			<div className="card-body">
-				<h2 className="card-title">{t("tags.panel.title")}</h2>
+				<h2 className="card-title">{t("tagsPanel.title")}</h2>
 				<Container>
 					{supportedTags.map((tag: Tag) => (
-						<Tag key={tag.name} className={`badge ${tag.type}`}>{tag.name}</Tag>
+						<Tag key={tag.name} className={`badge ${tag.type}`}>
+							{tag.name}
+						</Tag>
 					))}
 				</Container>
 			</div>

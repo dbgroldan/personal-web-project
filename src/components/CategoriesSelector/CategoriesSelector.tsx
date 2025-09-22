@@ -16,23 +16,23 @@ const CategoriesSelector = () => {
 
 	const supportedCategories: Array<Category> = [
 		{
-			name: t("categories.title.ia"),
+			name: t("categoriesPanel.titles.ia"),
 			icon: "images/categories/ia.png",
 		},
 		{
-			name: t("categories.title.web"),
+			name: t("categoriesPanel.titles.web"),
 			icon: "images/categories/web.png",
 		},
 		{
-			name: t("categories.title.iot"),
+			name: t("categoriesPanel.titles.iot"),
 			icon: "images/categories/iot.png",
 		},
 		{
-			name: t("categories.title.experiments"),
+			name: t("categoriesPanel.titles.experiments"),
 			icon: "images/categories/experiments.png",
 		},
 		{
-			name: t("categories.title.research"),
+			name: t("categoriesPanel.titles.research"),
 			icon: "images/categories/research.png",
 		},
 	];
@@ -40,7 +40,7 @@ const CategoriesSelector = () => {
 	return (
 		<div className="card w-full bg-base-100 card-md shadow-sm ">
 			<div className="card-body">
-				<h2 className="card-title">{t("categories.selector.title")}</h2>
+				<h2 className="card-title">{t("categoriesPanel.header")}</h2>
 				<Container>
 					{supportedCategories.map((category: Category) => (
 						<CategoryBox key={category.name}>

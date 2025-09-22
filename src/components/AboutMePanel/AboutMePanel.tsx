@@ -15,7 +15,7 @@ const AboutMePanel = () => {
 	return (
 		<div className="card bg-base-100 card-md shadow-sm ">
 			<div className="card-body">
-				<h2 className="card-title">{t("aboutme.panel.title")}</h2>
+				<h2 className="card-title">{t("aboutMePanel.title")}</h2>
 				<Container>
 					<TitlePanel>
 						<div className="avatar">
@@ -26,11 +26,11 @@ const AboutMePanel = () => {
 						<MeDescription>
 							<TitleName>Daissi Gonzalez</TitleName>
 							<SubtitleProfession>
-								{t("aboutme.panel.profession")}
+								{t("aboutMePanel.profession")}
 							</SubtitleProfession>
 						</MeDescription>
 					</TitlePanel>
-					<Description>{t("aboutme.panel.description")}</Description>
+					<Description>{t("aboutMePanel.description")}</Description>
 				</Container>
 			</div>
 		</div>

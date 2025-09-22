@@ -1,10 +1,10 @@
 ---
-title: Cómo usar Markdown en React INGLES
-image: /images/articles/en/article1/front.png
+title: Cómo usar Markdown en React
+image: /images/articles/e/article1/front.png
 author: Juan Pérez
 date: 2023-09-20
 language: es
-description: this is a description in en
+description: this is a description in es
 tags: [react, markdown, tutorial]
 ---
 
