@@ -3,9 +3,9 @@ import styled from "styled-components";
 const Square = styled.div<{
 	$color: string;
 	$size: number;
-	top: number;
-	left: number;
-	zIndex: number;
+	$top: number;
+	$left: number;
+	$zIndex: number;
 }>`
   position: absolute;
   border-radius: 15px;
@@ -13,9 +13,9 @@ const Square = styled.div<{
   height: ${(props) => props.$size}px;
   background-color: ${(props) => props.$color};
   box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.6);
-  z-index: ${(props) => props.zIndex};
-  top: ${(props) => props.top}px;
-  left: ${(props) => props.left}px;
+  z-index: ${(props) => props.$zIndex};
+  top: ${(props) => props.$top}px;
+  left: ${(props) => props.$left}px;
 `;
 
 const Container = styled.div`

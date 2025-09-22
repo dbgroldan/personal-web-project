@@ -39,7 +39,7 @@ const TagsPanel = () => {
 				<h2 className="card-title">{t("tags.panel.title")}</h2>
 				<Container>
 					{supportedTags.map((tag: Tag) => (
-						<Tag className={`badge ${tag.type}`}>{tag.name}</Tag>
+						<Tag key={tag.name} className={`badge ${tag.type}`}>{tag.name}</Tag>
 					))}
 				</Container>
 			</div>

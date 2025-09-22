@@ -43,7 +43,7 @@ const CategoriesSelector = () => {
 				<h2 className="card-title">{t("categories.selector.title")}</h2>
 				<Container>
 					{supportedCategories.map((category: Category) => (
-						<CategoryBox>
+						<CategoryBox key={category.name}>
 							<CategoryImage src={category.icon} />
 							<CategoryDescription>{category.name}</CategoryDescription>
 						</CategoryBox>

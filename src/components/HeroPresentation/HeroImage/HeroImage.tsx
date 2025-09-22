@@ -27,16 +27,16 @@ const generateClusteredBubbles = (
 ) => {
 	if (count <= 0) return [];
 
-	const bubbles = [];
-	const bigBubblesCount = 2;
-	const maxBigBubbleSize = maxSize * 1.5;
+	const squares = [];
+	const bigSquaresCount = 2;
+	const maxBigSquareSize = maxSize * 1.5;
 
 	const firstSize = minSize + Math.random() * (maxSize - minSize);
 	const firstRadius = firstSize / 2;
 	const firstLeft = firstRadius + Math.random() * (containerWidth - firstSize);
 	const firstTop = firstRadius + Math.random() * (containerHeight - firstSize);
 
-	const firstBubble = {
+	const firstSquare = {
 		id: 0,
 		$color: getRandomColor(),
 		$size: firstSize,
@@ -48,13 +48,13 @@ const generateClusteredBubbles = (
 		zIndex: 1,
 	};
 
-	bubbles.push(firstBubble);
+	squares.push(firstSquare);
 
-	let bigBubbleCreated = 0;
+	let bigSquareCreated = 0;
 	for (let i = 1; i < count; i++) {
-		const isBigBubble = bigBubbleCreated < bigBubblesCount;
-		const size = isBigBubble
-			? maxBigBubbleSize
+		const isBigSquare = bigSquareCreated < bigSquaresCount;
+		const size = isBigSquare
+			? maxBigSquareSize
 			: minSize + Math.random() * (maxSize - minSize);
 		const radius = size / 2;
 
@@ -64,8 +64,8 @@ const generateClusteredBubbles = (
 		let attempts = 0;
 
 		while (overlap && attempts < 100) {
-			const targetBubble = bubbles[Math.floor(Math.random() * bubbles.length)];
-			const { centerX, centerY, radius: targetRadius } = targetBubble;
+			const targetSquare = squares[Math.floor(Math.random() * squares.length)];
+			const { centerX, centerY, radius: targetRadius } = targetSquare;
 
 			const minDistance = targetRadius + radius;
 
@@ -87,10 +87,10 @@ const generateClusteredBubbles = (
 			top = newCenterY - radius;
 
 			overlap = false;
-			for (let j = 0; j < bubbles.length; j++) {
-				const existingBubble = bubbles[j];
-				const dx = existingBubble.centerX - newCenterX;
-				const dy = existingBubble.centerY - newCenterY;
+			for (let j = 0; j < squares.length; j++) {
+				const existingSquare = squares[j];
+				const dx = existingSquare.centerX - newCenterX;
+				const dy = existingSquare.centerY - newCenterY;
 				const distance = Math.sqrt(dx * dx + dy * dy);
 
 				if (distance < targetRadius + radius) {
@@ -103,7 +103,7 @@ const generateClusteredBubbles = (
 		}
 
 		if (!overlap) {
-			bubbles.push({
+			squares.push({
 				id: i,
 				$color: getRandomColor(),
 				$size: size,
@@ -115,35 +115,35 @@ const generateClusteredBubbles = (
 				zIndex: 1,
 			});
 
-			if (isBigBubble) {
-				bigBubbleCreated++;
+			if (isBigSquare) {
+				bigSquareCreated++;
 			}
 		} else {
 			console.warn("Invalid Square position");
 		}
 	}
 
-	bubbles.sort((a, b) => a.$size - b.$size);
-	bubbles.forEach((bubble, index) => {
-		bubble.zIndex = bubbles.length - index;
+	squares.sort((a, b) => a.$size - b.$size);
+	squares.forEach((square, index) => {
+		square.zIndex = squares.length - index;
 	});
 
-	return bubbles;
+	return squares;
 };
 
 const HeroImage: React.FC = () => {
-	const bubbles = generateClusteredBubbles(20, 30, 80, 400, 400);
+	const squareBubbles = generateClusteredBubbles(20, 30, 80, 400, 400);
 
 	return (
 		<Container>
-			{bubbles.map((bubble) => (
+			{squareBubbles.map((square) => (
 				<Square
-					key={bubble.id}
-					$color={bubble.$color}
-					$size={bubble.$size}
-					top={bubble.top}
-					left={bubble.left}
-					zIndex={bubble.zIndex}
+					key={square.id}
+					$color={square.$color}
+					$size={square.$size}
+					$top={square.top}
+					$left={square.left}
+					$zIndex={square.zIndex}
 				/>
 			))}
 
